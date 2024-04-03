@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    background-color: rgb(32, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 500px;
+    width: 300px;
+    background-color: black;
+
+    border-radius: 15px;
+    overflow: hidden;
+    border: solid black;
+    position: relative;
+}
+#stories{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    padding: 5px;
+    /* display: flex; */
+    /* gap: 10px; */
+    border-bottom: 2px solid blue;
+    white-space: nowrap; /*different line maa aauni lai aautai line maa aauni banauxa.*/
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+#stories::-webkit-scrollbar {
+        display: none;                  
+}
+#story{
+    /* background-color: blue; */
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    border: 5px solid rgb(253, 0, 0);
+    overflow: hidden;
+    display: inline-block;/*jati content xa teti matra thau ogatxa.*/
+    margin-right: 5px;
+
+}
+#story img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center;
+
+}

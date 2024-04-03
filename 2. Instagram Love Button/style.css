@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: lightseagreen;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#container{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid yellow;
+    position: relative;
+    overflow: hidden;
+}
+#container img{
+    object-fit: cover;
+    object-position: right;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+#container i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;/*yaha position diyepaxi parent conatiner lai realative*/
+    /*this top, left  will make it in the middle of container.
+    And the transform translate -50,-50 makes it exact on the center. */
+    top: 50%;
+    left: 50%;
+    /*scale 1 = normal, scale 2= aali thulo dil aani scale0 = gayab*/
+    /*we can use transform property only once.*/
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;/*initial opacity is 0*/
+    transition: transform ease 0.4s;
+}

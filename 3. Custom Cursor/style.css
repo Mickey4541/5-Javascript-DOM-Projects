@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+    color: white;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    mix-blend-mode: difference;
+    text-align: center;
+     position: absolute; /*js maa crsr.left lagako aaha absolute lekhera matra kaam garako ho */
+    transition: all linear 0.3s;
+}
+h1{
+    font-size: 9vw;
+    font-weight: 900;
+}
